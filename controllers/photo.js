@@ -61,7 +61,6 @@ const createPhoto = async (req, res) => {
 };
 
 // Get single photo
-// GET '/:birdingSessionId/:id'
 const getOnePhoto = async (req, res) => {
   try {
     // check that user has permission to access this birding session
@@ -81,7 +80,6 @@ const getOnePhoto = async (req, res) => {
 };
 
 // Update a photo
-// PUT '/:birdingSessionId/:id'
 const updatePhoto = async (req, res) => {
   // check that user is logged in
   if (!req.session.currentUser) {
