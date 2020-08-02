@@ -18,7 +18,7 @@ const contact = (req, res) => {
   var mailOptions = {
     from: data.email,
     to: process.env.myEmail,
-    subject: "A request for contact",
+    subject: data.subject,
     html: `<p>${data.name}</p>
                 <p>${data.email}</p>
                 <p>${data.message}</p>`,
