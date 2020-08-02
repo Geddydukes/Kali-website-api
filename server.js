@@ -37,6 +37,7 @@ app.use(express.json());
 
 app.use("/api/v1/users", routes.user);
 app.use("/api/v1/auth", routes.auth);
+app.use("/api/v1/email", routes.email);
 
 const PORT = process.env.PORT || 3650;
 app.listen(PORT, () => console.log(`Server listening @ Port ${PORT}`));

@@ -1,7 +1,7 @@
 // ==== IMPORTS
 const express = require("express");
 const router = express.Router();
-const photoController = require("../controllers/photoController");
+const photoController = require("../controllers/photo");
 
 // ==== ROUTES
 // path = /api/v1/photo
